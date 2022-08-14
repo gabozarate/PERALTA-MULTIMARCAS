@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./estiloCarrito.css">
+    <link rel="stylesheet" href="./estilosgenerales.css">
+    <link rel="stylesheet" href="./estilosproductos.css">
+
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="logo">
+            <img id="peralta" src="imagenes/PERALTA.png" alt="logo de la empresa">
+        </a>
+        <nav>
+            <a href="cotizaciones.html" class="nav-link">Cotizaciones</a>
+            <a href="empresas.html" class="nav-link">Atención a empresas</a>
+            <a href="envios.html" class="nav-link">ENVIOS</a>
+            <a href="contactos.html" class="nav-link">Contacto</a>
+            <a href="nosotros.html" class="nav-link">Nosotros</a>
+        </nav>
+    </header>
+    <div class="logoCarrito" id="logoCarrito">
+        <a href="#shopContainer" ></a>
+    </div>
+    <main id="itemsContainer">
+
+    </main>
+    <div id="shopContainer">
+        <div class="card">
+            <div class="cardInfo">
+                <h2>${item.marca}</h2>
+                <h3>Medida: ${item.rodado}</h3>
+                <p> ${item.cantidad} en stock </p>
+                <h4>$ ${item.precio}</h4>
+                <button class="shop" onclick="carryItem()" id="carryItemBtn">X</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="cardInfo">
+                <h2>${item.marca}</h2>
+                <h3>Medida: ${item.rodado}</h3>
+                <p> ${item.cantidad} en stock </p>
+                <h4>$ ${item.precio}</h4>
+                <button class="shop" onclick="carryItem()" id="carryItemBtn">X</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="cardInfo">
+                <h2>${item.marca}</h2>
+                <h3>Medida: ${item.rodado}</h3>
+                <p> ${item.cantidad} en stock </p>
+                <h4>$ ${item.precio}</h4>
+                <button class="shop" onclick="carryItem()" id="carryItemBtn">X</button>
+            </div>
+        </div>
+
+    </div>
+    <!-- <div class="shopContainer"></div> -->
+    <!-- <script src="./arrayLLantas.js" type="module"></script>  -->
+    <script src="./apps.js"></script>
+    <script>
+
+    </script>
+</body>
+
+</html>

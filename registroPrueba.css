@@ -1,0 +1,101 @@
+body{
+    background-image:url(https://images.unsplash.com/photo-1519003722824-194d4455a60c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=875&q=80) ;
+    background-position: center;
+    background-position-y: 100px;
+    background-size: contain;
+    background-repeat: none;
+}
+.stateContainer{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+.provincias {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 15px;
+    padding: 20px;
+    width: 70%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-family: monospace;
+    font-weight: bold;
+    color: aliceblue;
+    opacity: 0.8;
+    border: 3px solid #072227;
+    border-radius: 10px;
+    background-size: cover;
+    cursor: pointer;
+    
+}
+.textAlert{
+    color: black;
+    font-size: 51px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.titleAlert{
+    color: black;
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.provincias:hover{
+    opacity: 1;
+    border: 3px solid #fff;
+    box-shadow: 0px 1px 10px #fff ;
+    transition: 200ms ease;
+ }
+
+header{
+    position: relative;
+  
+}
+footer{
+    position: absolute;
+    margin-bottom: 0px;
+    margin-top: 50px;
+}
+
+.textSelec{
+    margin-top: 50px;
+    margin-left: 200px;
+    width: 70%;
+    color: #fff;
+    font-size: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    background-color: #0f2f35ad;
+}
+#norteA{
+    background-image: url(https://images.pexels.com/photos/5542897/pexels-photo-5542897.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-position: center;
+}
+#norteB{
+    background-image: url(https://images.pexels.com/photos/3672776/pexels-photo-3672776.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-position:center ;
+}
+#cuyo{
+    background-image:url(https://images.pexels.com/photos/5332934/pexels-photo-5332934.jpeg?auto=compress&cs=tinysrgb&w=600) ;
+    background-position: center;
+}
+#litoral{
+    background-image: url(https://res.cloudinary.com/worldpackers/image/upload/c_limit,f_auto,q_auto,w_1140/ftfaskndal0mzr2jthbk);
+    background-position: center;
+    
+}
+#bsas{
+    background-image: url(https://images.pexels.com/photos/1034662/pexels-photo-1034662.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-position: center;
+    background-size: cover no-repeat;
+}
+#centro{
+    background-image: url(https://images.pexels.com/photos/5332934/pexels-photo-5332934.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-position: center;
+}
+#patagonia{
+    background-image: url(https://images.pexels.com/photos/7785239/pexels-photo-7785239.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-position: center;
+}
