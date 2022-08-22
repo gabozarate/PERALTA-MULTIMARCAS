@@ -127,7 +127,7 @@ const showItems = (acccesorios) => {
                         <h3>${acc.modelo}</h3>
                         <p> ${acc.cantidad} unidades en stock </p>
                         <h4>$ ${acc.precio}</h4>   
-                        <button class="shop" onclick="carryItem(${acc.id})" id="carryItemBtn">AGREGAR</button>
+                        <button class="shop" onclick="carryItem('${acc.id}')"  id="carryItemBtn">AGREGAR</button>
                         <a href="index.html">ver mas</a>
                     </div>
                     </div>
@@ -145,8 +145,9 @@ showItems(accesorios)
 const shop = []
 
 function carryItem (acc) {
-    const accesorio = items.find(e => e.id === acc)
-    const flag = shop.findIndex(x => x.acc.id === acc)
+    shopSuccess();
+    const accesorio = accesorios.find(e => e.id === acc)
+    const flag = shop.findIndex(x => x.item.id === acc)
     if (flag === -1) {
         shop.push({item: accesorio, cant: 1})
     } else {
@@ -154,6 +155,7 @@ function carryItem (acc) {
     }
     console.log(shop)
 }
+
 
 
 

@@ -1,8 +1,36 @@
+form{
+    margin-bottom: 2rem;
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 100%;
+
+}
+div{
+    margin: auto;
+    width: 60%;
+    align-items: center;
+    justify-content: center;
+}
+input{
+    width: 30%;
+}
+.contraseña{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: rgb(7, 34, 39);
+    background-color: rgb(98, 167, 168);
+    border-radius: 10px;
+}
 .empresas{
     background-image: url(imagenes/empresa.jpg) ;
     background-size: cover;
     background-position: center;
     display:flex;
+    width: 100%;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
@@ -10,18 +38,13 @@
     min-height: 100vh;
 
 }
-
 .empresasInicio{
     margin: auto;
-    margin-bottom: 20px;
-    padding: 10px;
-    padding-bottom: 5px;
-    /* width: 60%; */
-    /* min-height: 50px; */
+    margin-bottom: 10px;
+    padding: 3px;
+    MIN-width: 50%;
     color: rgb(98, 167, 168);
-    font-weight:580;
     font-size: 2em;
-    font-family: aliens;
     text-align: center;
 }
 .empresasContact{
@@ -64,7 +87,7 @@
     margin: auto;
     margin-top: 10px;
     padding: 5px 10px;
-    font-size: 1em;
+    font-size: 1.3em;
     font-weight: lighter;
     color: rgb(7, 34, 39);
     border: 1px rgb(174, 254, 255);
@@ -77,46 +100,34 @@
     box-shadow: 0px 5px 10px rgb(174, 254, 255);
     transition: ease 400ms;
 }
-.empresas .text{
-    margin: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding: 2px;
-    width: 30%;
-    min-height: 20px;
-    color: rgb(174, 254, 255);
-    border-radius: 20px;
-    font-weight: lighter;
-    font-size: 2em;
-    font-family: aliens;
-    text-align: center;
 
-}
-.empresas p{
-    margin: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding: 1px 10px;
-    width: 20%;
-    min-height: 20px;
-    color: rgb(174, 254, 255);
-    background-color: rgb(7, 34, 39);
-    border-radius: 20px;
-    font-weight: lighter;
-    font-size: 2em;
-    font-family: aliens;
-    text-align: center;
-}
+
 .empresas h1{
-    margin-top: 15px;
-    padding: 10px;
+    margin-top: 40px;
+    padding: 10px 5px;
     width: 30%;
     font-size: 3em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
     color: rgb(7, 34, 39);
-    background-color: rgb(174, 254, 255);
+    background-color: rgba(174, 254, 255, 0.583);
     border-radius: 20px;
-    
-
+}
+.text{
+    margin: auto;
+    margin-top: 1rem;
+    width: 30%;
+    color: rgb(7, 34, 39);
+    font-size: 1em;
+    background-color: rgb(98, 167, 168);
+    border-radius: 20px;
+}
+.iniciarSesion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin:auto;
 }
 @media (max-width: 800px){
   
@@ -183,4 +194,24 @@
     .empresas p{
         font-size: 20px;
     }
+    .empresas h1{
+        font-size: 2.5em;
+    }
+    form{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .text{
+       width: auto;
+    }
+    .textB{
+        width: auto;
+    }
+    input{
+        width: auto;
+    }
+
 }

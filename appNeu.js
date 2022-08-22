@@ -156,7 +156,7 @@ function shopSuccess(){
             shop[flag].cant = shop[flag].cant + 1
         }
         console.log(shop)
-
+            
     
     }
 

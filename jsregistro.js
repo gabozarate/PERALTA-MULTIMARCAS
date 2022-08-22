@@ -1,39 +1,3 @@
-// const states = [
-// {
-//     id:`norteA`,
-//     precio:`$1.200 por Unidad`  
-// },
-// {
-//     id:`norteB`,
-//     precio:`$1.500 por Unidad`  
-// },
-// {
-//     id:`litoral`,
-//     precio:`$1.100 por Unidad`  
-// },
-// {
-//     id:`centro`,
-//     precio:`$1.000 por Unidad`  
-// },
-// {
-//     id:`bsas`,
-//     precio:`$1.200 por Unidad` 
-// },
-// {
-//     id:`patagonia`,
-//     precio:`$1.000 por Unidad`   
-// },
-// {
-//     id:`cuyo`,
-//     precio:`$1.100 por Unidad`    
-// },
-// ]
-
-// function precio (id) {
-//     const state = states.find(e => e.id === id)
-//    console.log(state)
-//     }
-
 function verProductosBtn() {
     window.open(`cotizaciones.html`)
 }
