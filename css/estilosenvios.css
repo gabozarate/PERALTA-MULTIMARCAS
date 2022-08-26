@@ -1,5 +1,5 @@
 .envios{
-    background-image: url(imagenes/rodrigo-abreu-lq9PxpwDZUk-unsplash.jpg) ;
+    background-image: url(https://images.unsplash.com/photo-1624023751140-ba1f3c423f07?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80) ;
     background-size: cover;
     background-position: center;
     display:flex;
@@ -21,7 +21,7 @@
     color: rgb(7, 34, 39);
     font-weight:580;
     font-size: 6em;
-    font-family: aliens;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
 }
 .enviosContact{
@@ -53,7 +53,7 @@
     border-radius: 20px;
     font-weight: lighter;
     font-size: 3em;
-    font-family: aliens;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
 }
 @media (max-width: 800px){

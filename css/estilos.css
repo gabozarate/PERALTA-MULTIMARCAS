@@ -67,7 +67,7 @@ footer{
 }
 .autopartes{
     
-    background-image: url(imagenes/kool-c-GUkCocksjK8-unsplash.jpg);
+    background-image: url(https://images.unsplash.com/photo-1594500067118-456bba17ba14?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1115&q=80);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -76,14 +76,15 @@ footer{
     background-color: #AAA;
 }
 .autopartesInicio{
-    margin-top: 100px;
+    margin-top: 30px;
     margin-left: 30px;
+    padding: 10px;
     width: 40%;
     min-height: 400px;
     color: rgb(174, 254, 255);
     font-weight: lighter;
-    font-size: 5em;
-    font-family: aliens;
+    font-size: 4.5em;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
     text-align: start;
     align-items: center;
 }
@@ -170,7 +171,7 @@ footer{
 }
 
 .empresas{
-    background-image: url(imagenes/jose-vazquez-Q5RBHz9cu1A-unsplash.jpg) ;
+    background-image: url(https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=815&q=80) ;
     background-size: cover;
     background-position: center;
     display: flex;
@@ -181,14 +182,15 @@ footer{
 
 }
 .empresasInicio{
-    margin-top: 100px;
-    margin-right: 100px;
+    margin-top: 30px;
+    margin-right: 30px;
+    padding: 10px;
     width: 45%;
     min-height: 400px;
-    color: rgb(7, 34, 39);
+    color: rgb(174, 254, 255);
     font-weight: lighter;
-    font-size: 6em;
-    font-family: aliens;
+    font-size: 4.5em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: end;
 }
 .empresasContact{
@@ -208,7 +210,7 @@ footer{
     transition: ease 400ms;
 }
 .envios{
-    background-image: url(imagenes/ismael-paramo-tnVdQGmWtb0-unsplash.jpg);
+    background-image: url(https://images.unsplash.com/photo-1566576721346-d4a3b4eaeb55?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=465&q=80);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -218,14 +220,14 @@ footer{
     opacity: 0.8;
 }
 .enviosInicio{
-    margin-top: 50px;
-    margin-left: 50px;
+    margin-top: 30px;
+    margin-left: 30px;
     width: 40%;
     min-height: 400px;
     color: rgb(174, 254, 255);
     font-weight: lighter;
-    font-size: 5.5em;
-    font-family: aliens;
+    font-size: 4.5em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: start;
    
 }
