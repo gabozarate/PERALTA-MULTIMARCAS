@@ -97,9 +97,7 @@ const items = [
     },
 ]
 
-//import  {items} from "./arrayLLantas";
-// const items = require('./arrayLLantas')
-// console.log(items);
+
 function shopSuccess(){
     Swal.fire({
         position: 'center',
@@ -113,6 +111,18 @@ function shopSuccess(){
       })
 }
 
+function presupuesto(){
+    Swal.fire({
+        position: 'center',
+        icon: 'success',
+        title: 'presupuesto enviado',
+        showConfirmButton: false,
+        timer: 1500,
+        customClass:{
+            popup: `popUpSucces`
+        }
+      })
+}
 
 const showItems = (items) => {
     const itemsContainer = document.getElementById("itemsContainer");
@@ -128,7 +138,7 @@ const showItems = (items) => {
                         <p> ${item.cantidad} en stock </p>
                         <h4>$ ${item.precio}</h4>   
                         <button class="shop" onclick="carryItem(${item.id})" id="carryItemBtn${item.id}">AGREGAR</button>
-                        <a href="index.html">ver mas</a> 
+                        <a href="cotizaciones.html">ver mas</a> 
                     </div>
                     </div>
                 </div>
@@ -141,8 +151,10 @@ const showItems = (items) => {
     });
 }
 showItems(items)
-//carrito 
-const shop = []
+
+let shop = []
+
+
 
 function carryItem (item) {
     const llanta = items.find(e => e.id === item)
@@ -153,31 +165,45 @@ function carryItem (item) {
         shop[flag].cant = shop[flag].cant + 1
     }
     console.log(shop)
+    showShop();
 }
 
+const deleteItem = (itemId) => {
+shop = shop.filter(x => x.item.id != itemId)
+showShop();
+} 
 
 
-// const showShop = (shop) => {
-//     const shopContainer = document.getElementById("shopContainer");
-//     shop.forEach((e) => {
-//         const div = document.createElement(`div`);
-//         div.classList.add(`.card`)
-//         div.innerHTML += ` <div class="cardConteiner">
-//                 <div class="card">
-//                         <div class="cardInfo">
-//                         <h2>${e.marca}</h2>
-//                         <h3>Medida: ${e.rodado}</h3>
-//                         <p> ${e.cantidad} en stock </p>
-//                         <h4>$ ${e.precio}</h4>   
-//                         <button>X</button>
-//                     </div>
-//                     </div>
-//                 </div>
-//         `;
-//         shopContainer.appendChild(div);
-        
-//         const agregadoCarrito = document.getElementById(`carryItemBtn`)
-//         agregadoCarrito.addEventListener(`click`, shopSuccess);
-        
-//     });
-// }
+
+document.addEventListener(`DOMContentLoaded`, ()=>{
+    if (localStorage.getItem(`shop`)){
+         shop = JSON.parse(localStorage.getItem(`shop`))
+        showShop()
+    }
+})
+
+
+const showShop = (()=>{
+   shopContainer.innerHTML= ""
+    shop.forEach((e) => {
+        const div = document.createElement(`div`)
+        div.classList.add(`.card`)
+        div.innerHTML += `
+                        <div class="cardS">
+                                <div class="cardInfo">
+                                <img src="${e.item.Image}" width="200px"/>
+                                <h2>${e.item.marca}</h2>
+                                <h3>Medida: ${e.item.rodado}</h3>
+                                <h4>$ ${e.item.precio}</h4> 
+                                <h4>cantidad: ${e.cant} </h4>
+                                <h4>precio total: ${Number(e.cant)*Number(e.item.precio)} </h4>
+                                <button onclick ="deleteItem(${e.item.id})" >X</button>
+                            </div>
+                            </div>
+                        </div>
+        `
+        shopContainer.appendChild(div)
+        localStorage.setItem(`shop`, JSON.stringify(shop))
+    })
+})
+

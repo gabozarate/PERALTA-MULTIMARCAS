@@ -1,5 +1,5 @@
 function verProductosBtn() {
-    window.open(`cotizaciones.html`)
+    window.open(`productos.html`)
 }
 
 function norteA() {

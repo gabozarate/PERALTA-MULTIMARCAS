@@ -281,12 +281,13 @@ li{
         
     }
     .autopartesInicio{
+        padding: 1rem;
+        font-size: 3rem;
         width: 100%;
     }
     .cotizaciones{
         align-items: center;
         margin: auto;
-        margin-top: 20px;
         margin-bottom: 10px;
     }
     .banner{

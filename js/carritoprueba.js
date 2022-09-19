@@ -371,7 +371,7 @@ const showItems = (items) => {
                         <p> ${item.cantidad} en stock </p>
                         <h4>$ ${item.precio}</h4>   
                         <button class="shop" onclick="carryItem("${item.id}")" id="carryItemBtn${item.id}">AGREGAR</button>
-                        <a href="index.html">ver mas</a> 
+                        <a href="cotizaciones.html">ver mas</a> 
                     </div>
                     </div>
                 </div>
